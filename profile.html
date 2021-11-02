@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="image/icon.png">
+       <title>Profile's Tan Thi</title>
+    </head>
+    <style>
+        html{
+            position: relative;
+        }
+         body {
+            font-family: Montserrat;
+         }
+         #avatar img{
+            display: block;
+            max-width:110px;
+            max-height:110px;
+            width: auto;
+            height: auto;
+            border-radius: 100%;
+            margin-left: auto; 
+            margin-right: auto;
+            margin-top: 40px;
+            
+         }
+         #name{
+            text-align: center;
+            font-weight: 700;
+            color: white;
+            font-size: 20px;
+            padding: 3px 2px;
+            margin-top: 7px;
+            margin-bottom: 25px;
+         }
+
+         #facebook img,#insta img, #github img, #spotify img, #more img{
+            width: 45px;
+            margin: 2px 5px 0px;
+         }
+         #facebook, #insta, #github, #spotify, #more{
+             height: 50px;
+             font-size: 18px;
+             padding: 4px;
+             margin: 5px 0;
+             background-color: rgba(61, 178, 255,0.25);
+             position: relative;
+             border-radius: 30px 30px 30px;
+         }
+         #facebook:hover, #insta:hover, #github:hover, #spotify:hover, #more:hover{
+            background-color: rgba(61, 178, 255,0.5);
+        }
+         #facebook #n, #insta #n, #github #n, #spotify #n, #more #n{
+            -moz-user-select: none !important;
+            -webkit-touch-callout: none!important;
+            -webkit-user-select: none!important;
+            -khtml-user-select: none!important;
+            -moz-user-select: none!important;
+            -ms-user-select: none!important;
+            user-select: none!important;
+            display: inline;
+            width: 130px;
+            left: 65px;
+            color: white;
+            position:absolute;
+            top: 0px;
+         }
+         .table h1{
+             text-align: center;
+             color: white;
+             font-weight: 500;
+         }
+
+         #phone img, #email img{
+             width: 70px;
+             height: 70px;
+         }
+         footer{
+                color: white;
+                position: absolute;
+                bottom: 0px;
+                height: 30px;
+                top: 100%;
+                margin-bottom: 13%;
+                width: 80%;
+                margin-left: 10%;
+                font-size: 15px;
+                text-align: center;
+        }        
+        #more:active, #facebook:active{
+            background-color: rgba(61, 178, 255,0.9);;
+        }
+         @media only screen and (min-width: 1025px){
+
+                @keyframes table {
+                    0% { left:0px; top:200px;}
+                    100% { left:0px; top:0px;}
+                }
+                .table {
+                    width: 100px;
+                    height: 100px;
+                    position: relative;
+                    animation-name: table;
+                    animation-duration: 2s;
+                    }
+            body {
+                display: flex;
+                font-family: Montserrat;
+                background-image: url('image/background.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                }
+            .main{
+                display:grid;
+                width: 25%;
+                margin-top: 2%;
+                margin-left: 4%;
+            }
+            #bgip{
+                width: auto;
+                height: auto;
+                padding: 0 10px;
+            }
+            #bgip img{
+                width: 95%;
+                height: auto;
+                right:2%;
+            }
+            .intro{
+                position: absolute;
+                height: auto;
+                width: 15%;
+                left: 8%;
+                top: 5%;
+            }
+            .table{
+                margin-left: 5%;
+                margin: 5%;
+                background-color: rgba(156, 25, 224,0.25);
+                width: 900px;
+                height: auto;
+                border: 1px solid #2a3cad;
+                border-radius: 10px;
+                box-shadow: 0px 0px 30px #2a3cad;
+            }
+            .table:hover{
+                background-color: rgba(156, 25, 224,0.35);
+            }
+
+         }
+         @media only screen and (min-width: 375px) and (max-width: 1025px){
+             body{
+                 position: relative;
+                 background-image: url("image/background-mobile.jpg");
+             }
+             #bgip img{
+                 width: 100%;
+             }
+             .intro{
+                 position: absolute;
+                 top:10%;
+                 width: 80%;
+                 left: 10%;
+             }
+             .table{
+                 display: none;
+             }
+         }
+ 
+    </style>
+    <body>
+        
+            <div class = "main">
+                <a id="bgip"><img src='image/ip12.png' >
+                    <div class='intro'>
+                        <a id="avatar"><img src='image/avatar.jpg' ></a>
+                        <p id="name">Lê Nguyễn Tấn Thi</p>
+                        <!--Facebook-->
+                        <a href="https://www.facebook.com/lntt.1806/" target="_blank">
+                            <div id="facebook" >
+                                <img src="image/facebook.png">
+                                <p id="n">Facebook</p>
+                            </div>
+                        </a>
+                        <!--Insta-->
+                        <a href="https://www.instagram.com/tanthi.it/" target="_blank">
+                            <div id="insta" >
+                                <img src="image/instagram.png">
+                                <p id="n">Instagram</p>
+                            </div>
+                        </a>
+                        <!--Github-->
+                        <a href="https://github.com/tanthidev" target="_blank">
+                            <div id="github" >
+                                <img src="image/github.png">
+                                <p id="n">GitHub</p>
+                            </div>
+                        </a>
+                        <!--Spotify-->
+                        <a href="https://open.spotify.com/user/31mxuxwtbtnf2ivxfzmwxnqtnpfu?si=68xpsNeIQMuRIS8YoK2UUg&utm_source=copy-link" target="_blank">
+                            <div id="spotify" >
+                                <img src="image/Spotify.png">
+                                <p id="n">Spotify</p>
+                            </div>
+                        <a href= "moreInfo.html">
+                            <div id="more" >
+                                <img src="image/more.png">
+                                <p id="n">More Info</p>
+                            </div>
+                    </div>
+                </a>
+                
+            </div>
+        <div class="table">
+             <h1>Welcome my profile</h1>
+        </div>
+    </body>
+    <footer>
+        <p>Designed by Tan Thi © Copyright 2021. All rights reserved. </p>
+    </footer>
+</html>
